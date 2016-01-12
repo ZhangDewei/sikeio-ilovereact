@@ -463,3 +463,49 @@ body, div, span {
 	margin: 0;
 	padding: 0;
 }
+
+body {
+  background-color: #1F1E34;
+  color: #fff;
+  font-family: "Avenir Next",
+      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+      Arial, "Lucida Grande", sans-serif;
+    font-weight:100;
+  height:100%;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 100px;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  font-weight: 400;
+  color: #fff;
+}
+
+a:hover {
+  font-weight: 400;
+  color: #dadada;
+  text-decoration: none;
+}
+
+.section {
+  background-color: rgba(255,0,0,0.3);
+  border: 2px solid #fff;
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
