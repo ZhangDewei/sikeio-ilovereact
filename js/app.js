@@ -34,12 +34,12 @@ window.onload = function(){
 
 			var sectionTop = link.offsetTop;
 			var sectionBottom = sectionTop + link.offsetHeight;
-		
-			if(window.scrollY > sectionTop && window.scrollY < sectionBottom){
-				link.className = 'active';
-			}else{
-				link.className = '';
-			}
+			
+			if(window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+		      link.className = "active";
+		    } else {
+		      link.className = "";
+		    }
 
 		};
 
