@@ -11,11 +11,13 @@
 	<!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
 
     <link rel="stylesheet" href="bundle/app.css">
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
 	<div class="section" id="intro-section">
 		<div class="overlay section"></div>
-		<img style="position:relative;" src="img/react-logo.svg"/>
+		<img style="position:relative;" src="img/react-logo.svg" class="logo-img"/>
 		<h1 style="position:relative;">Build Native Apps With React</h1>
 		<div class="flex-direction-div">
 			<a class="padding-a" href="#native">
@@ -36,7 +38,7 @@
 		</div>
 		
 	</div>
-	<div class="section flex-direction-div">
+	<div id="native" class="section flex-direction-div">
 		<div class="iphone-demo" style="flex-basis:0;flex-shrink:0.5;">
 		  <img src="img/iphone-frame.svg"/ style="width:100%;vertical-align:top;">
 		  <img class="sp-img" src="img/tumblr-demo.jpg"/>
@@ -50,15 +52,19 @@
 		  </div>
 		</div>
 	</div>
-	<div class="section">
+	<div id="touch" class="section">
 
 	</div>
-	<div class="section">
+	<div id="android" class="section">
 		<h1>Android Is Here</h1>
 		<img id="android-robot" src="img/android-robot.svg" class="robot"/>
 	</div>
 	<div id="slider-control">
-	  <a href="#native" class="active">
+	  <a href="#intro-section" class="active">
+	    <div class="dot"></div>
+	  </a>
+
+	  <a href="#native">
 	    <div class="dot"></div>
 	  </a>
 
@@ -66,11 +72,7 @@
 	    <div class="dot"></div>
 	  </a>
 
-	  <a href="#async">
-	    <div class="dot"></div>
-	  </a>
-
-	  <a href="#flex">
+	  <a href="#android">
 	    <div class="dot"></div>
 	  </a>
 	</div>
